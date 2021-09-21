@@ -1,9 +1,10 @@
-import './header.css';
+import {useStyles} from './header.style';
 
 export function Header() {
-    return (
-        <header className="main-header">
-            <h1>Registro Olímpico</h1>
-        </header>
-    );
+  const classes = useStyles();
+  return (
+    <header className={classes.root}>
+      <h1>Registro Olímpico</h1>
+    </header>
+  );
 }
