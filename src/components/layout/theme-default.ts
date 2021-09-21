@@ -1,11 +1,13 @@
 import { createTheme } from "@material-ui/core";
 
 const mainColor = '#000';
+const secondary = '#595959';
 const white = '#fff';
 
 declare module '@material-ui/core/styles/createPalette' {
   type Olympic = {
     mainColor: string;
+    secondary: string;
     white: string;
   };
   interface Palette{
@@ -20,6 +22,7 @@ export const themeDefault = createTheme({
   palette:{
     olympic:{
       mainColor,
+      secondary,
       white,
     }
   },
